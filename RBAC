@@ -1,5 +1,8 @@
 Get roles
 
+kubectl get roles
+
+
 kubectl get clusterroles
 kubectl get clusterroles system:discovery -o yaml
 
