@@ -1,0 +1,34 @@
+Get roles
+
+kubectl get clusterroles
+kubectl get clusterroles system:discovery -o yaml
+
+
+Create roles
+kubectl create role pod-reader --verb=get --verb=list --verb=watch --resource=pods
+kubectl create role warsztat --verb=get,list,watch --resource=pods,pods/status
+
+
+create clusterrole
+
+kubectl create clusterrole pod-reader --verb=get,list,watch --resource=pods
+kubectl create clusterrole "foo" --verb=get --non-resource-url=/logs/*
+
+
+create clusterrolebinding
+
+kubectl create clusterrolebinding root-cluster-admin-binding --clusterrole=cluster-admin --user=root
+
+create clusterrole from yaml 
+
+kubectle create namespace monitor
+
+kubectl apply -f https://raw.githubusercontent.com/djkormo/k8s-AKS-primer/master/install/addons/kubeview-rbac.yaml
+
+kubectl get clusterrole
+
+
+kubectl apply -f https://raw.githubusercontent.com/Andrzejkokocinski/Workshopaks/master/Role.yaml
+kubectl apply -f https://raw.githubusercontent.com/Andrzejkokocinski/Workshopaks/master/Rolebinding.yaml
+
+kubectl get clusterroles
