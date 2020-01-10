@@ -1,5 +1,5 @@
 
-Kubectl cluster-info
+kubectl cluster-info
 
 That can be like below
 
@@ -10,7 +10,7 @@ kubernetes-dashboard is running at https://ingressdem-ingressdemoaksrg-95975e-80
 Metrics-server is running at https://ingressdem-ingressdemoaksrg-95975e-809b9e85.hcp.westeurope.azmk8s.io:443/api/v1/namespaces/kube-system/services/https:metrics-server:/proxy
 
 
-Kubectl get pods --all-namespaces
+kubectl get pods --all-namespaces
 
 That can be like below
 
@@ -25,7 +25,7 @@ kube-system   omsagent-bpr8v                         1/1     Running   0        
 kube-system   omsagent-rs-779b64789b-7tqkt           1/1     Running   0          20m
 kube-system   tunnelfront-85fc855c56-52rhs           1/1     Running   0          20m
 
-Kubectl get deployments -n kube-system
+kubectl get deployments -n kube-system
 
 
 NAME                   READY   UP-TO-DATE   AVAILABLE   AGE
